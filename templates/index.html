@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favic/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favic/favicon-16x16.png">
+
+    <link rel="stylesheet" href="../static/css/styles.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&family=Playfair+Display:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>photo color picker</title>
+ 
+</head>
+<body>   
+    <div class="head">
+        
+        <img class="head-photo" src="../static/images/head-background.jpg">
+        <h1 class="head-text">color picker</h1>
+        
+    </div>
+    <div class="middle">
+        <div class="upload">
+            {% if error %}
+            <p class="error"> {{error|safe}} </p>
+            {% endif %}
+            <form action= {{ url_for('upload_file') }} method='post' enctype='multipart/form-data'>
+				<label class="btn choose-btn">
+					<input type="file" id="myFile" name="file">
+					Choose picture
+				</label>
+				<input class="upload-btn btn" type="submit" value="pick color">
+            </form>
+        </div>
+        <div class="result-div">
+            <img class="result-img" src="{{file}}">
+            {{ paragraphs|safe }}
+        </div>
+    </div>
+    <div class="footer">
+        <p class="copyright">all rights reserved @ mirghiasi</p>
+    </div>
+</body>
+</html>

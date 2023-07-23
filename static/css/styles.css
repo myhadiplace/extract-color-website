@@ -1,0 +1,148 @@
+body {
+    margin:0;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+	width:6%;
+	border-style:dotted;
+	height:0;
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+	border-width:7px;
+	border-top-color:#DFDFDF;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.error {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: 600;
+    color: rgb(255, 0, 0);
+}
+
+.head {
+    padding:5%;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+.head-photo {
+    position: relative;
+    width: 50%;
+    bottom: 20px;
+    right:180px;
+
+}
+
+.head-text {
+    position: absolute;
+    top: 20%;
+    right: 28%;
+    color: rgb(232, 244, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-shadow: 20px;
+}
+
+
+.middle{
+    margin: 100px 0;
+}
+
+.upload {
+    width: 50%;
+    margin: 100px auto 100px auto;
+}
+
+.result-div {
+	width:100%;
+	height:100%;
+	margin:6% auto 40% auto;
+	
+
+}
+
+.result-text {
+	text-align:left;
+	color: white;
+	font-weight:600;
+	position:relative;
+	margin:0 10% 3% 0;
+	display:inline-block;
+	padding:10px 20px;
+	border: 2px solid #e5e4e4;
+	border-radius:25px;	
+	min-width:12%;
+}
+
+
+.result-img {
+	position:relative;
+	width:450px;
+	height:450px;
+	left:15%;
+	object-fit:contain;	
+	float:left;
+	border-radius:4px;
+	object-position:100% 0%;
+	
+}
+
+
+.footer {
+    padding: 16px;
+    margin-top: 5%;
+    background-color: rgba(232, 232, 232, 0.986);
+    text-align: center;
+
+}
+
+.upload-btn {
+	position:relative;
+	left:60px;
+
+}
+
+.choose-btn {
+	position:relative;
+	right:120px;
+
+}
+
+.btn {
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 16px;
+color: #fff;
+background-color: #030303;
+padding: 10px 35px;
+border: solid 2px #000000;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 12px 50px;
+transition : 120ms;
+transform: translateY(0);
+display: inline-block ;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+
+.btn:hover{
+
+transition : 400ms;
+padding: 10px 35px;
+transform : translateY(-0px);
+background-color: #ffffff;
+color: #0052a3;
+border: solid 2px #0052a3;
+}
+
+
+
